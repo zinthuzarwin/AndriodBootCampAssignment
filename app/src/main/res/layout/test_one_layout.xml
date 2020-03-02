@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:id="@+id/rose_love"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/red_rounded_corner">
+
+        <ImageView
+            android:id="@+id/rose"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/rose" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/love"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_rounded_corner"
+            android:padding="35dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/love_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY LOVE,\nYOU LIKE A FLOWER"
+                android:textColor="@color/blue"
+                android:textSize="25dp"
+                app:layout_constraintLeft_toLeftOf="@id/love"
+                app:layout_constraintTop_toTopOf="@id/love" />
+
+            <TextView
+                android:id="@+id/editor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="&#9733; Editor's Choice"
+                android:textColor="@color/pink"
+                android:textSize="10dp"
+                app:layout_constraintLeft_toLeftOf="@id/love"
+                app:layout_constraintTop_toBottomOf="@id/love_title" />
+
+            <TextView
+                android:id="@+id/weird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="We're all a little weird. And life is a little weird. And when we find someone whose weirdness is compatable with ours, we join up with them and fall into mutually satisfying weirdness and call it love-true love.\n\nAnd in this crazy life, and through these"
+                android:textColor="@color/blue"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toLeftOf="@id/love"
+                app:layout_constraintTop_toBottomOf="@id/editor" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="$99.9"
+                android:textColor="@color/blue"
+                android:textSize="22dp"
+                app:layout_constraintLeft_toLeftOf="@id/love"
+                app:layout_constraintTop_toBottomOf="@id/weird" />
+
+            <Button
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_below="@id/weird"
+                android:layout_toRightOf="@id/price"
+                android:background="@drawable/rectangle_button"
+                android:text="Order Now"
+                android:textColor="@color/white"
+                android:textSize="11dp"
+                app:layout_constraintBaseline_toBaselineOf="@id/price"
+                app:layout_constraintRight_toRightOf="@id/love"
+                app:layout_constraintTop_toBottomOf="@id/weird" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

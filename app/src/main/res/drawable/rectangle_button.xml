@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    inside shape-->
+    <solid android:color="@color/pink" />
+
+    <!--    border of the shape-->
+<!--    <stroke android:color="@color/colorAccent" android:width="2dp" />-->
+
+    <!--    four corners of the shape-->
+    <corners android:radius="8dp" />
+
+    <!--    single corners of the shape-->
+    <!--    <corners android:topLeftRadius="12dp" />-->
+
+</shape>
